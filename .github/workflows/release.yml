@@ -47,11 +47,13 @@ jobs:
             prop_path: "version"
     
       # Configure the Environment Variables needed for releasing the Package
-      - name: Set Environment Variables
+      - name: Preprocess
         run: |
           echo "zipFile=${{ vars.PACKAGE_NAME }}-${{ steps.version.outputs.value }}".zip >> $GITHUB_ENV
           echo "unityPackage=${{ vars.PACKAGE_NAME }}-${{ steps.version.outputs.value }}.unitypackage" >> $GITHUB_ENV
           echo "version=${{ steps.version.outputs.value }}" >> $GITHUB_ENV
+          rm -rf .git
+          rm -rf .github
 
       # Zip the Package for release
       - name: Create Package Zip

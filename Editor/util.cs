@@ -1,5 +1,22 @@
 using System;
 using System.Diagnostics;
+using UnityEngine;
+using UnityEditor;
+
+
+public class LogUtil
+{
+
+    public static void Log(string message)
+    {
+        UnityEngine.Debug.Log($"[SimpleGit] {message}");
+    }
+
+    public static void LogError(string message)
+    {
+        UnityEngine.Debug.LogError($"[SimpleGit] {message}");
+    }
+}
 
 public class GitUtil
 {
@@ -12,6 +29,7 @@ public class GitUtil
 
     public static GitResult RunGit(string args)
     {
+        LogUtil.Log($"Running git {args}");
         var psi = new ProcessStartInfo
         {
             FileName = "git",

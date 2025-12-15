@@ -1,0 +1,14 @@
+{
+  "name": "net.octz.simplegit.Editor",
+  "references": [
+    "net.octz.simplegit"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "autoReferenced": true,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "defineConstraints": [],
+  "optionalUnityReferences": []
+}

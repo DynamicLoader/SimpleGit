@@ -1,0 +1,16 @@
+{
+  "name": "net.octz.simplegit",
+  "displayName": "SimpleGit",
+  "version": "0.0.1",
+  "description": "A Git UI in Unity.",
+  "dependencies": {},
+  "gitDependencies": {},
+  "vpmDependencies": {},
+  "author": {
+    "name": "DynamicLoader",
+    "email": "me@dyldr.top",
+    "url": "https://vpm.octz.net/"
+  },
+  "legacyFolders": {},
+  "legacyFiles": {}
+}
